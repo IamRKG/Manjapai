@@ -1,0 +1,41 @@
+<div class="account-info">
+    <aside class="side">
+      <div class="quick-info panel">
+          <fa-icon [icon]="faUser" size="3x"></fa-icon>
+           <div><span>{{accountInfo.name.first}} {{accountInfo.name.last}}</span></div>
+      </div>
+        <div class="my-order panel">
+          <span><a (click)="myOrder()" >My Order</a></span>
+        </div>
+    </aside>
+  <section class="form-content panel">
+    <h2 class="page-title">Personal Information</h2>
+      <dl class="form-group">
+        <div class="form-control">
+            <dt class="form-title"><strong>Company</strong></dt>
+            <dd class="form-des">{{accountInfo.company}}</dd>
+        </div>
+        <div class="form-control">
+                <dt class="form-title"><strong>Email</strong></dt>
+                <dd class="form-des">{{accountInfo.email}}</dd>
+        </div>
+        <div class="form-control">
+                <dt class="form-title"><strong>Phone</strong></dt>
+                <dd class="form-des">{{accountInfo.phone}}</dd>
+        </div>
+        <div class="form-control">
+                <dt class="form-title"><strong>Address</strong></dt>
+                <dd class="form-des">{{accountInfo.address}}</dd>
+        </div>
+        <div class="form-control">
+                <dt class="form-title"><strong>About</strong></dt>
+                <dd class="form-des">{{accountInfo.about}}</dd>
+        </div>
+        <div class="form-control">
+                <dt class="form-title"><strong>Registered</strong></dt>
+                <dd class="form-des">{{accountInfo.registered}}</dd>
+        </div>
+      </dl>
+
+    </section>
+</div>

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://gm50ml1rtc.execute-api.ap-southeast-1.amazonaws.com',
+  mockApi: '../assets/mock-api/account-info.json'
 };
 
 /*

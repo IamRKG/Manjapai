@@ -8,7 +8,7 @@ h1{
 }
 
 h2{
-    margin: 0.2em 0 !important;
+    margin: 0.5em 0 !important;
     font-size: 1.2em !important;
 }
 
@@ -17,6 +17,16 @@ h3{
     font-size: 1em !important;
 }
 
+h4{
+    margin: 0.7em 0 !important; 
+}
+
+h5{
+    margin: 0.7em 0 !important; 
+}
+dt::after {
+    content: ": ";
+  }
 
 nav ul {
     list-style: none;
