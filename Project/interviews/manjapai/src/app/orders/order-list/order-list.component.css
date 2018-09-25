@@ -7,10 +7,13 @@
 
 .order-item{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100px 1fr;
+    grid-gap: 0;
+    grid-template-columns: 90px 1fr;
     border: 1px solid #ccc;
     justify-items: center;
     align-items: center;
 }
 
+.order-info{
+  justify-self: left;
+}

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import{ AccountInfoComponent } from './account-info/account-info.component';
+import { AccountInfoComponent } from './account-info/account-info.component';
 
-import{ AccountInfoResolverGuard } from '../account/account-info-resolver/account-info-resolver.guard'
+import { AccountInfoResolverGuard } from '../common/account-info-resolver/account-info-resolver.guard';
 
 const routes: Routes = [{
   path: '',

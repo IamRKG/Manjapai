@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient,HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
-import { AccountInfo } from '../account-info-interface/account-info';
+import { AccountInfo } from '../../account/account-info-interface/account-info';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -13,12 +13,12 @@ export class AccountInfoService {
 
   mockApiUrl = environment.mockApi;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getAccountInfo():Observable<AccountInfo>{
+  getAccountInfo(): Observable<AccountInfo> {
     return this.http.get<AccountInfo>(this.mockApiUrl)
     .pipe(
-      map((res:Response) =>{
+      map((res: Response) => {
         return res;
       }),
       catchError(this.handleError)
@@ -40,5 +40,5 @@ export class AccountInfoService {
     return throwError(
       'Something bad happened; please try again later.');
   };
-  
+
 }

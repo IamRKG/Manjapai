@@ -1,14 +1,9 @@
 <section class="order-list panel">
   <h2>My Orders</h2>
   <div class="order-group">
-    <div class="order-item">
-      <div class="order-pic">Picture</div>
-      <div class="order-info">sdf fsdf dsf sdfdsf dsfdfs</div>
+    <div class="order-item" *ngFor="let order of orders">
+      <div class="order-pic"><img src="{{order.product.picture}}" alt="{{order.product.name}}"/></div>
+      <div class="order-info"><a href="">{{order.product.name}}</a></div>
     </div>
-    <div class="order-item">
-        <div class="order-pic">Picture</div>
-        <div class="order-info">sdf fsdf dsf sdfdsf dsfdfs</div>
-      </div>
-      
   </div>
 </section>

@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OrderListComponent } from './order-list/order-list.component';
-import { OrderDetailsComponent } from './order-details/order-details.component';
+import { OrderDetailsComponent } from './order-list/order-details/order-details.component';
+import {AccountInfoResolverGuard} from '../common/account-info-resolver/account-info-resolver.guard';
 
 const routes: Routes = [{
-  path:'',
-  component:OrderListComponent
-},{
-  path:'',
-  component:OrderDetailsComponent
+  path: '',
+  component: OrderListComponent,
+  resolve: {
+    orderListResolveData: AccountInfoResolverGuard
+  }
+}, {
+  path: '',
+  component: OrderDetailsComponent
 }];
 
 @NgModule({

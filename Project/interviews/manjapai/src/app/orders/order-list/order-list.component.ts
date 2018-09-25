@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
+import {Orders} from '../orders-interface/orders';
 
 @Component({
   selector: 'app-order-list',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderListComponent implements OnInit {
 
-  constructor() { }
+  orders: Orders;
+
+  constructor(private route: ActivatedRoute) { }
+
+  showOrders() {
+    this.route.data.subscribe((data: Orders) => {
+      this.orders = data['orderListResolveData']['orders'];
+      console.log(this.orders);
+    });
+  }
 
   ngOnInit() {
+    this.showOrders();
   }
 
 }

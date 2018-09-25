@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Orders } from '../orders-interface/orders';
-
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-order-details',
@@ -9,11 +7,10 @@ import { Orders } from '../orders-interface/orders';
 })
 export class OrderDetailsComponent implements OnInit {
 
-  @Input() orders:Orders
-  
   constructor() { }
-  
+
   ngOnInit() {
+
   }
 
 }
