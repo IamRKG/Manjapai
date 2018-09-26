@@ -25,19 +25,3 @@
   }
 }
 
-/*Form*/
-.form-group{
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns:1fr;
-}
-
-.form-control{
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns:1fr;
-}
-
-.form-group .form-des{
-  margin-left: 0px;
-}

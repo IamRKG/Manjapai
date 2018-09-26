@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://gm50ml1rtc.execute-api.ap-southeast-1.amazonaws.com',
+  //  baseUrl: 'https://gm50ml1rtc.execute-api.ap-southeast-1.amazonaws.com',
   mockApi: '../assets/mock-api/account-info.json'
 };
 

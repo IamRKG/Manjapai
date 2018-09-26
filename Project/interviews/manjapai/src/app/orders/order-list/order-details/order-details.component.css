@@ -1,0 +1,30 @@
+.m-row-container{
+  display: grid;
+  grid-gap: 0;
+  align-items: center;
+}
+
+.m-row-container > div{
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 0;
+}
+.m-row-child{
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 90px 1fr;
+  justify-items: left;
+  align-items: center;
+}
+
+dt::after {
+  content: "";
+}
+
+@media (min-width: 700px) {
+  .form-control {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 90px 1fr;
+  }
+
+}

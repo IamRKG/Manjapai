@@ -1,3 +1,40 @@
-<p>
-  order-details works!
-</p>
+<section class="form-content panel" *ngIf="getOrderOrProductDetailsTemplate == 'orderDetails'">
+  <h2 class="page-title">Order Details</h2>
+  <dl class="form-group m-row-container">
+    <div class="form-control">
+      <dt class="form-title"><strong>ID</strong></dt>
+      <dd class="form-des">{{order.id}}</dd>
+    </div>
+    <div class="form-control m-row-child">
+      <dt class="form-title"><img src="{{order.product.picture}}" alt="{{order.product.name}}"/></dt>
+      <dd class="form-des">{{order.product.name}}</dd>
+    </div>
+    <div class="form-control">
+      <dt class="form-title"><strong>Price</strong></dt>
+      <dd class="form-des">{{order.price}}</dd>
+    </div>
+    <div class="form-control">
+      <dt class="form-title"><strong>Order Date</strong></dt>
+      <dd class="form-des">{{order.product.orderDate}}</dd>
+    </div>
+    <div class="form-control">
+      <dt class="form-title"><strong>Order Status</strong></dt>
+      <dd class="form-des">{{order.product.orderStatus}}</dd>
+    </div>
+
+  </dl>
+</section>
+
+<section class="form-content panel" *ngIf="getOrderOrProductDetailsTemplate == 'productDetails'">
+  <h2 class="page-title">Product Details</h2>
+  <dl class="form-group m-row-container">
+    <div class="form-control m-row-child">
+      <dt class="form-title"><img src="{{order.product.picture}}" alt="{{order.product.name}}"/></dt>
+      <dd class="form-des">{{order.product.name}}</dd>
+    </div>
+    <div class="form-control">
+      <dt class="form-title"><strong>Description</strong></dt>
+      <dd class="form-des">{{order.product.description}}</dd>
+    </div>
+  </dl>
+</section>

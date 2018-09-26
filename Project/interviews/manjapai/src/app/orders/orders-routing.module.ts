@@ -9,11 +9,14 @@ const routes: Routes = [{
   component: OrderListComponent,
   resolve: {
     orderListResolveData: AccountInfoResolverGuard
-  }
-}, {
-  path: '',
-  component: OrderDetailsComponent
-}];
+  }},
+  {
+    path: ':id',
+    component: OrderDetailsComponent,
+    resolve: {
+      orderDetailsResolveData: AccountInfoResolverGuard
+    }}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -2,8 +2,10 @@
   <h2>My Orders</h2>
   <div class="order-group">
     <div class="order-item" *ngFor="let order of orders">
-      <div class="order-pic"><img src="{{order.product.picture}}" alt="{{order.product.name}}"/></div>
-      <div class="order-info"><a href="">{{order.product.name}}</a></div>
+      <div class="order-pic"><img src="{{order.product.picture}}" (click)="navigateToOrderDetails(order,'productDetails')" alt="{{order.product.name}}"/></div>
+      <div class="justify-self"><a href="javascript:" (click)="navigateToOrderDetails(order,'orderDetails')">{{order.product.name}}</a></div>
+      <div class="justify-self">{{order.price}}</div>
+      <div class="justify-self">{{order.product.orderStatus}} On {{order.product.orderDate}}</div>
     </div>
   </div>
 </section>

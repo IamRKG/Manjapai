@@ -18,15 +18,15 @@ h3{
 }
 
 h4{
-    margin: 0.7em 0 !important; 
+    margin: 0.7em 0 !important;
 }
 
 h5{
-    margin: 0.7em 0 !important; 
+    margin: 0.7em 0 !important;
 }
 dt::after {
     content: ": ";
-  }
+}
 
 nav ul {
     list-style: none;
@@ -39,31 +39,31 @@ nav ul {
     background: #fffe00;
     border-bottom: 1px solid #000;
   }
-  
+
   .wrapper .main-nav ul{
     background: #000;
   }
-  
+
   .wrapper .main-nav ul li{
     padding: 10px;
   }
-  
-  
+
+
   .wrapper .main-nav ul li a{
     color: #fff;
     text-decoration:none;
   }
-  
+
   .wrapper .main-nav ul li a:active{
       text-decoration:underline;
       color: #fffe00;
   }
-  
-  /*Panel*/
+
+/*Panel*/
   .panel{
       background: #fff;
       padding: 10px;
-  }    
+  }
 
 /*Utility*/
 .v-align-mid{
@@ -71,8 +71,30 @@ nav ul {
 }
 
 
+.justify-self{
+  justify-self: left;
+}
+
+/*Form*/
+.form-group{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:1fr;
+}
+
+.form-control{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns:1fr;
+}
+
+.form-group .form-des{
+  margin-left: 0px;
+}
 
 /*Footer*/
 .main-footer{
     padding: 10px;
 }
+
+

@@ -36,6 +36,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "angular-font-awesome": "^3.1.2",
+    "angular-in-memory-web-api": "^0.6.1",
     "codelyzer": "~4.3.0",
     "font-awesome": "^4.7.0",
     "jasmine-core": "~2.99.1",
